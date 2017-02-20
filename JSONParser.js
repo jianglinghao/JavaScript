@@ -3,9 +3,7 @@
    * @param  {[type]} string [需解析的json字符串]
    * @return {[type]}     [返回解析后的对象]
    */
-  // 测试用例 `{"a":[{"C":{}}],"B":true}`
-  // parseJson(`{"a":[{"C":{}}],"B":true}`)
-  parseJson(`{"a":[{"C":{}}],"B":true}`)
+
 
   function parseJson(string) {
       var i = 0
@@ -129,7 +127,7 @@
       }
       //解析parseFalse
       function parseFalse() {
-          i = i + 5 //必须放在前边，不然return之后就不执行后面的操作了
+          i = i + 5
           return false
       }
 
@@ -144,7 +142,7 @@
       function isDigit(chart) {
           if (!chart) {
               return false
-          } //为什么
+          }
           var codeOf0 = '0'.charCodeAt(0)
           var codeOf9 = '9'.charCodeAt(0)
           var chartCode = chart.charCodeAt(0)
@@ -155,11 +153,8 @@
           }
       }
 
-      //判断是否是数字2
+      //判断是否是数字
       function isNum(chart) {
-          // if (!chart) {
-          //   return false
-          // }
           switch (chart) {
               case '1':
               case '2':
