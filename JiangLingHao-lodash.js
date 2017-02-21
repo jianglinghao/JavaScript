@@ -1,4 +1,4 @@
-var JiangLingHao = {
+var _ = {
     chunk: function(array, size) {
         var l = Math.ceil(array.length / size)
         var division = []
